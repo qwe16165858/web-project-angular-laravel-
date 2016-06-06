@@ -1,0 +1,20 @@
+<div class="ui card">
+  <div class="image">
+    <img style="height:290px" ng-src="../asserts/img/{{myLecturerCardCtrl.lecturer.image}}">
+  </div>
+  <div class="content">
+    <a class="header">{{myLecturerCardCtrl.lecturer.name}}</a>
+    <div class="meta">
+      <span class="date">{{myLecturerCardCtrl.lecturer.position}}</span>
+    </div>
+    <div class="description">
+      {{myLecturerCardCtrl.lecturer.introduction}}
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      {{myLecturerCardCtrl.lecturer.subjectsCount}} Subjects
+    </a>
+  </div>
+</div>

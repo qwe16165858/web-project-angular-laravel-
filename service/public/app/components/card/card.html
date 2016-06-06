@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="asserts/css/nav-bar.css">
+<div class="main" ng-controller="tutorcard">
+      <div class="container">
+
+        <div ng-repeat="tutor in tutors" class="row">
+          <div class="col-md-3">
+            <img ng-src={{TutorCardCtrl.tutor.cover}}>
+            <p class="title">{{ myTutorCardCtrl.tutor.name }}</p>
+            <p class="price">{{ myTutorCardCtrl.tutor.price | currency }}</p>
+
+          </div>
+        </div>
+
+      </div>
+</div>

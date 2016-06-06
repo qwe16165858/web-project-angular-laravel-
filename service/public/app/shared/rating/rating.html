@@ -1,0 +1,28 @@
+<div class="ui card">
+  <div class="content">
+    <div class="header">Average Rating</div>
+  </div>
+  <div class="content">
+    <div class="ui star rating" data-rating="3" data-max-rating="5"></div>
+    {{myRatingCtrl.rating.average}}, {{myRatingCtrl.rating.viewers}} Reviewers
+    <hr>
+    <div class='col-md-4'>
+      Content
+      <br>
+      {{myRatingCtrl.rating.content}}
+    </div>
+    <div class='col-md-4'>
+      Assignment
+      <br>
+      {{myRatingCtrl.rating.assignment}}
+    </div>
+    <div class='col-md-4'>
+      Lecturer
+      <br>
+      {{myRatingCtrl.rating.lecturer}}
+    </div>
+  </div>
+  <div class="extra content">
+    <button class="ui orange button col-md-12">Join Subject</button>
+  </div>
+</div>

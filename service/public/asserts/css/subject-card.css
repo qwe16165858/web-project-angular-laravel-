@@ -1,0 +1,11 @@
+.card{
+  width: 400px;
+}
+
+.subject-card.image{
+  height: 300px;
+}
+
+.subject-card.image.img{
+  height: 100%;
+}

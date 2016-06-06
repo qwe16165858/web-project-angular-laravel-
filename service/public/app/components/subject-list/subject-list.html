@@ -1,0 +1,78 @@
+<div class="col-md-12 margin_top_15">
+  <div class="col-md-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h1>All SUBJECTS</h1>
+      <br>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="col-md-2">
+      <select class='form-control'>
+        <option value='' selected>Unversity</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class='form-control'>
+        <option value='' selected>Region</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class='form-control'>
+        <option value='' selected>Faculty</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class='form-control'>
+        <option value='' selected>Lecturer</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <input type="text" class="form-control" placeholder="Search ...">
+    </div>
+    <div class="col-md-2">
+      <div class="ui small selection dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Order By</div>
+        <div class="menu">
+          <div class="item" data-value="1">Popular</div>
+          <div class="item" data-value="0">Release Date</div>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<div class="col-md-12" style="text-align: center">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <hr>
+    <my-subject-card class="col-md-3" style="margin-bottom: 20px; text-align:left" subject="subject" ng-repeat="subject in mySubjectListCtrl.subjects"></my-subject-card>
+  </div>
+  <div class="col-md-1"></div>
+  <div class='col-md-12'>
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

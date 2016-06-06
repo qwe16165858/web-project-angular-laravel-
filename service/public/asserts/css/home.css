@@ -1,0 +1,41 @@
+
+.home-page-ad-bg {
+  background-image: url('../img/home-show-sm.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+  position: relative;
+}
+
+.home-page-ad-search {
+  height: 600px;
+  position: absolute;
+  text-align : center;
+  vertical-align: middle;
+  display: table-cell;
+  z-index: 999;
+}
+
+.div-middle{
+  top:45%;
+}
+
+.div-center{
+  text-align : center;
+}
+
+.padding_top_45{
+  padding-top: 45px;
+}
+
+.padding_bottom_35{
+  padding-bottom: 35px;
+}
+
+.padding_top_10{
+  padding-top: 10px;
+}
+
+.image-med{
+  width: 60%;
+}

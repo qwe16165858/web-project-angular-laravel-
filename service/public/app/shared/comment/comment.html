@@ -1,0 +1,25 @@
+<a class="avatar">
+    <img style="height:35px" src="../asserts/img/avatar-example.png"></img>
+  </a>
+  <div class="content">
+    <a class="author">{{:: myCommentCtrl.comment.author}}</a>
+    <div class="metadata">
+      <span class="date">{{:: myCommentCtrl.comment.date}}</span>
+    </div>
+    <div class="text">
+      {{:: myCommentCtrl.comment.text}}
+    </div>
+    <div class="actions">
+      <a class="reply">Reply</a>
+      <div class='col-md-12'><br/></div>
+    </div>
+  </div>
+</div>
+<div class="comments" ng-if="myCommentCtrl.comment.comments.length > 0">
+  <my-comment
+    comment="comment"
+    class='comment'
+    ng-repeat="comment in myCommentCtrl.comment.comments"
+  >
+  </my-comment>
+</div>

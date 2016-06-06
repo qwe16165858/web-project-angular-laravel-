@@ -1,0 +1,25 @@
+<div class="ui special cards">
+<div class="card">
+  <div class="blurring dimmable image">
+    <div class="ui dimmer">
+      <div class="content">
+        <div class="center">
+          <div class="ui inverted button">Join Class</div>
+        </div>
+      </div>
+    </div>
+    <img ng-src="asserts/img/{{mySubjectCardCtrl.subject.subject_img}}">
+  </div>
+  <div class="content">
+    <a class="header" ng-href="target=get_subject_detail&id=1">{{mySubjectCardCtrl.subject.subject_name}}</a>
+    <div class="meta">
+      <span class="date">{{mySubjectCardCtrl.subject.subject_introduction}}</span>
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="calendar outline icon"></i>
+      Next: {{mySubjectCardCtrl.subject.subject_next}}
+    </a>
+  </div>
+</div>

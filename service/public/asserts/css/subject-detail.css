@@ -1,0 +1,86 @@
+/**
+ * css file for navigation bar
+ * author  : George Zhang
+ * location: app/asserts/css
+ * type    : private
+ */
+
+.detail-page-header-bg {
+  background-image: url('../img/study_ielts.jpg');
+  height: 300px;
+  position: relative;
+}
+
+.detail-page-header-top {
+  height: 300px;
+  background: #0d0d0d;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 10;
+}
+
+.detail-page-header-title{
+  height: 300px;
+  position: absolute;
+  z-index: 999;
+}
+
+.margin_top_5{
+  margin-top: 5px;
+}
+
+.margin_top_15{
+  margin-top: 15px;
+}
+
+.font_white{
+  color: #cccccc;
+  font-family: Arial;
+}
+
+.font-content{
+  color: black;
+  font-family: Arial;
+  font-size:16px;
+  margin-top: 10px;
+}
+
+.font-content-title{
+  color: black;
+  font-family: Arial;
+  font-size:18px;
+}
+
+.font-subject-breadcrumb{
+  font-size: 13px;
+}
+
+.font-subject-category{
+  font-size: 25px;
+}
+
+.font-subject-title{
+  font-size: 45px;
+}
+
+.subject-breadcrumb{
+  margin-top: 10px;
+}
+.subject-title{
+  margin-top: 40px;
+}
+
+.subject-category{
+  margin-top: 120px;
+}
+
+.subject-list{
+  margin-top: 15px;
+  margin-left:-35px;
+  color: #e6e6e6;
+}
+
+.avatar-img{
+  height:35px;
+  width: 35px
+}

@@ -1,0 +1,111 @@
+<link rel="stylesheet" type="text/css" href="asserts/css/subject-detail.css">
+
+<div class='col-md-12 detail-page-header-bg'>
+</div>
+<div class='col-md-12 detail-page-header-top'>
+</div>
+<div class='col-md-12 detail-page-header-title'>
+  <div class='col-md-1'></div>
+  <div class="col-md-10">
+      <div class="font_white subject-breadcrumb font-subject-breadcrumb"> Course \ IELTS \ IELTS Writing </div>
+      <div class="font_white font-subject-title subject-title"> IELTS WRITING </div>
+      <div class="font_white subject-category font-subject-category">
+        <div style="float:left">
+          <ul style='list-style-type: none;'>
+            <li class='subject-list'>Joinor</li>
+            <li class='subject-list'>Level</li>
+          </ul>
+        </div>
+        <div class="col-md-2" style="float:left"></div>
+        <div style="float:left">
+          <ul style='list-style-type: none;'>
+            <li class='subject-list'>2 HR</li>
+            <li class='subject-list'>Time</li>
+          </ul>
+        </div>
+        <div class="col-md-2" style="float:left"></div>
+        <div style="float:left">
+          <ul style='list-style-type: none;'>
+            <li class='subject-list'>20</li>
+            <li class='subject-list'>Students</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+<div class='col-md-12 detail-page-content'>
+  <div class='col-md-1'></div>
+  <div class='col-md-7 margin_top_5'>
+    <h2>Introduction</h2>
+    <font class='font-content'>
+      欢迎来到精彩的Java编程世界！Java语言已经成为当前软件开发行业中主流的开发语言。本课程将介绍Java环境搭建、工具使用、基础语法。带领大家一步一步的踏入Java达人殿堂！Let’s go!
+    </font>
+    <hr>
+    <h2>Subject Outline</h2>
+    <!-- list start -->
+    <div class="ui list">
+      <div class="item" ng-repeat='item in mySubjectDetailCtrl.subject_outline'>
+        <i class="fa fa-slideshare fa-2x icon" aria-hidden="true"></i>
+        <div class="content">
+          <a class="header font-content-title" ng-bind="item.title"></a>
+          <div class="description font-content" ng-bind-html="item.content"></div>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <!-- list end -->
+    <hr>
+    <h2>Student Comments</h2>
+    <!-- comments start -->
+    <div class="ui threaded comments">
+      <my-comment
+        class='comment'
+        comment="comment"
+        ng-repeat="comment in mySubjectDetailCtrl.comments"
+      >
+      </my-comment>
+      <form class="ui reply form">
+        <div class="field">
+          <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+          <i class="icon edit"></i> Add Reply
+        </div>
+      </form>
+    </div>
+    <!-- comments end -->
+  </div>
+  <div class='col-md-3'>
+    <!-- rating -->
+    <div class='col-md-12 margin_top_15'>
+      <my-rating rating='mySubjectDetailCtrl.rating'></my-rating>
+    </div>
+    <!-- end rating -->
+    <div class="col-md-12">
+      <br><hr></br>
+    </div>
+    <!-- Lectuer -->
+    <div class='col-md-12 margin_top_5'>
+      <my-lecturer-card lecturer="mySubjectDetailCtrl.lecturer"></my-lecturer-card>
+      <br/>
+      <div class="ui info message">
+        <div class="header">
+          Need-To-Know
+        </div>
+        <ul class="list">
+          <li>It's good to see you again.</li>
+          <li>Did you know it's been a while?</li>
+        </ul>
+        <br/>
+        <div class="header">
+          What you can learn
+        </div>
+        <ul class="list">
+          <li>It's good to see you again.</li>
+          <li>Did you know it's been a while?</li>
+        </ul>
+      </div>
+    </div>
+    <!-- end Lectuer -->
+  </div>
+</div>
